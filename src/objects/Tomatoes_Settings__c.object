@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Settings for Tomatoes package.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>GitHub_Access_Token__c</fullName>
+        <description>GitHub Access Token for retrieving Tomatoes' token.</description>
+        <externalId>true</externalId>
+        <label>GitHub Access Token</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Tomatoes Settings</label>
+    <visibility>Protected</visibility>
+</CustomObject>
