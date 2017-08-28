@@ -1,0 +1,41 @@
+<apex:page id="tsPage"
+           cache="false"
+           controller="Tomatoes_Settings_Controller"
+           docType="html-5.0"
+           label="Tomatoes Settings"
+           showHeader="true"
+           sidebar="true"
+           standardStylesheets="false"
+           title="Tomatoes Settings"
+>
+  <apex:stylesheet value="{!URLFOR($Resource.Tomatoes_Settings_Styles)}"/>
+
+  <apex:form id="tsForm" title="Tomatoes Settings">
+    <apex:pageBlock id="tsPB" title="Tomatoes Settings">
+      <apex:pageMessages id="tsPM"/>
+      <apex:pageBlockButtons >
+        <apex:commandButton value="Save Settings" action="{!saveSettings}"/>
+      </apex:pageBlockButtons>
+
+      <apex:outputLabel value="GitHub Access Token  " for="tsGitHubAccessTokenInput"
+                        rendered="{!isGitHubAccessTokenInputVisible}" styleClass="bigMargin"/>
+
+      <apex:input id="tsGitHubAccessTokenInput" label="GitHub Access Token"
+                  rendered="{!isGitHubAccessTokenInputVisible}" size="50" tabindex="0"
+                  title="GitHub Access Token" type="text" value="{!gitHubAccessToken}"
+                  styleClass="bigMargin"/>
+
+      <apex:outputLabel value="GitHub Access Token  " for="tsGitHubAccessTokenInputSecret"
+                        rendered="{!NOT(isGitHubAccessTokenInputVisible)}" styleClass="bigMargin"/>
+
+      <apex:inputSecret id="tsGitHubAccessTokenInputSecret" label="GitHub Access Token" redisplay="true"
+                        rendered="{!NOT(isGitHubAccessTokenInputVisible)}" size="50"
+                        tabindex="1" title="GitHub Access Token" value="{!gitHubAccessToken}"
+                        styleClass="bigMargin"/>
+
+      <apex:commandButton id="hideShowButton" action="{!hideShowInputGitHubAccessToke}" value="{!IF(isGitHubAccessTokenInputVisible, 'Hide', 'Show')}"
+                          title="Hide/Show GitHub Access Token" styleClass="bigMargin"/>
+
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

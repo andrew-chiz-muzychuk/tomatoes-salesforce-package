@@ -1,0 +1,20 @@
+<apex:page id="tsPage"
+           cache="false"
+           controller="Tomatoes_List_Controller"
+           docType="html-5.0"
+           label="Tomatoes List"
+           showHeader="true"
+           sidebar="true"
+           standardStylesheets="false"
+           title="Tomatoes List"
+>
+  <apex:form id="tsForm" title="Tomatoes List">
+    <apex:pageBlock id="tsPB" title="Tomatoes List">
+      <apex:pageMessages id="tsPM"/>
+      <apex:pageBlockButtons >
+        <apex:commandButton value="Get Tomatoes Token" action="{!getTomatoesToken}"/>
+      </apex:pageBlockButtons>
+      {!tomatoesToken}
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tomatoes Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tomatoes Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Base Endpoint --></label>
+        <name>Base_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- GitHub Access Token --></label>
+        <name>GitHub_Access_Token__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Endpoint --></label>
+        <name>Session_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserInfor Endpoint --></label>
+        <name>UserInfor_Endpoint__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
