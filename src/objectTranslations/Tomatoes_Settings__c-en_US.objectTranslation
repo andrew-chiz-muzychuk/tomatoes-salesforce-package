@@ -21,6 +21,10 @@
         <name>Session_Endpoint__c</name>
     </fields>
     <fields>
+        <label><!-- Tomatoes Endpoint --></label>
+        <name>Tomatoes_Endpoint__c</name>
+    </fields>
+    <fields>
         <label><!-- UserInfor Endpoint --></label>
         <name>UserInfor_Endpoint__c</name>
     </fields>

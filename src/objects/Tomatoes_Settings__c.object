@@ -35,6 +35,17 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Tomatoes_Endpoint__c</fullName>
+        <defaultValue>&quot;/api/tomatoes&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Tomatoes Endpoint</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>UserInfor_Endpoint__c</fullName>
         <defaultValue>&apos;/api/user&apos;</defaultValue>
         <externalId>false</externalId>
