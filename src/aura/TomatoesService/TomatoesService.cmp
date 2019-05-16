@@ -1,0 +1,78 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" controller="TomatoesService" >
+    <aura:attribute name="tomatoesDateFrom" type="String" />
+    <aura:attribute name="tomatoesDateTo" type="String" />
+    <aura:attribute name="tomatoesToken" type="String" />
+    <aura:attribute name="data" type="List" />
+    <aura:attribute name="dataOriginal" type="List" />
+    <aura:attribute name="columns" type="List" />
+    <aura:attribute name="clientNames" type="List" />
+    <aura:attribute name="selectedName" type="String" />
+    <aura:attribute name="weeklyView" type="Boolean" default="true"/>
+    <aura:attribute name="weekFromNow" type="Integer"/>
+    <aura:attribute name="weekLabel" type="String"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/> 
+    <aura:handler name="change" value="{!v.weekFromNow}" action="{!c.searchWeeklyTomatoes}"/> 
+    <div class="c-container">
+        <lightning:buttonStateful
+            state="{! v.weeklyView }"
+            variant="brand"
+            labelWhenOff="Veiw by weeks"
+            labelWhenOn="Veiw by dates"
+            onclick="{! c.changeView }"
+        />
+        <aura:if isTrue="{!v.tomatoesToken}">
+            <aura:if isTrue="{!v.weeklyView}">
+                <div class="slds-modal__content slds-p-around--medium slds-grid slds-wrap slds-size--1-of-4">
+                    <lightning:buttonIcon class="slds-p-horizontal_x-small slds-col" iconName="utility:left" variant="bare" onclick="{! c.previousWeek }" alternativeText="Previous week" />
+                    <p class="slds-p-horizontal_x-small slds-col" style="text-align:center">{!v.weekLabel}</p>
+                    <lightning:buttonIcon class="slds-p-horizontal_x-small slds-col" iconName="utility:right" variant="bare" onclick="{! c.nextWeek }" alternativeText="Next week" />
+                </div>
+            <aura:set attribute="else">
+                <div class="slds-modal__content slds-p-around--medium slds-grid slds-wrap">
+                    <lightning:input class="slds-p-horizontal_x-small slds-size--1-of-3 slds-col" type="date" name="tomatoesDateFrom" label="From" value="{!v.tomatoesDateFrom}" />
+                    <lightning:input class="slds-p-horizontal_x-small slds-size--1-of-3 slds-col" type="date" name="tomatoesDateTo" label="To" value="{!v.tomatoesDateTo}" />
+                
+                    <lightning:button 
+                        class="slds-p-horizontal_x-small slds-m-top_large slds-size--1-of-10 slds-col"
+                        variant="Neutral"
+                        label="Search tomatoes"
+                        title="Base action"
+                        onclick="{! c.searchTomatoes }"/>
+                </div>
+            </aura:set>
+            </aura:if>
+        	
+        <aura:set attribute="else">
+			<lightning:button 
+                    variant="Neutral"
+                    label="Connect"
+                    onclick="{! c.connect }"/>
+    	</aura:set>
+        </aura:if>
+        <aura:if isTrue="{!v.data.length > 0}">
+        	<lightning:datatable
+                    keyField="id"
+                    data="{! v.data }"
+                    columns="{! v.columns }"
+                    hideCheckboxColumn="true"/>
+        </aura:if>
+        <aura:if isTrue="{!v.data.length > 0}">
+            <div class="slds-grid">
+            <lightning:combobox 
+                    class="slds-p-horizontal_x-small slds-size--1-of-4 slds-col"
+                    name="filter" 
+                    label="Client Name" 
+                    value="" 
+                    placeholder="Select client name"
+                    options="{! v.clientNames }" 
+                    onchange="{! c.filterChange }"/>
+            <lightning:button 
+                    class="slds-p-horizontal_x-small slds-m-top_large slds-size--1-of-9 slds-col"
+                    variant="Neutral"
+                    label="Filter"
+                    onclick="{! c.filter }"/>
+            </div>
+        </aura:if>
+    </div>
+</aura:component>

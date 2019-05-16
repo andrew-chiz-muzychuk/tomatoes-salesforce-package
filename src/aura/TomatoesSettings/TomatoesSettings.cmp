@@ -1,0 +1,12 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" controller="TomatoesService" >
+	<aura:attribute name="provider" type="String" />
+    <aura:attribute name="token" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    
+    <div class="slds-modal__content slds-p-around--medium slds-grid slds-wrap ">
+        <lightning:input class="slds-p-horizontal_x-small slds-size--1-of-3 slds-col" name="provider" label="Your's Tomato.es provider" value="{!v.provider}" />
+        <lightning:input class="slds-p-horizontal_x-small slds-size--1-of-3 slds-col" name="token" label="Your's Tomato.es token" value="{!v.token}" />
+        <lightning:button class="slds-p-horizontal_x-small slds-m-top_large slds-size--1-of-10 slds-col" variant="brand" label="Save settings" onclick="{!c.save}" />
+    </div>
+    
+</aura:component>

@@ -2,6 +2,14 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>*</members>
+        <name>ActionLinkGroupTemplate</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AnalyticSnapshot</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -26,11 +34,87 @@
     </types>
     <types>
         <members>*</members>
+        <name>ApprovalProcess</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AssignmentRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AssignmentRules</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
         <members>*</members>
+        <name>AuthProvider</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AutoResponseRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AutoResponseRules</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>BrandingSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>BusinessProcess</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CallCenter</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CaseSubjectParticle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Certificate</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ChannelLayout</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ChatterExtension</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CleanDataService</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Community</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CompactLayout</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>ConnectedApp</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ContentAsset</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CorsWhitelistOrigin</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CspTrustedSite</name>
     </types>
     <types>
         <members>*</members>
@@ -45,32 +129,16 @@
         <name>CustomFeedFilter</name>
     </types>
     <types>
-        <members>Account.Active__c</members>
-        <members>Account.CustomerPriority__c</members>
-        <members>Account.NumberofLocations__c</members>
-        <members>Account.SLAExpirationDate__c</members>
-        <members>Account.SLASerialNumber__c</members>
-        <members>Account.SLA__c</members>
-        <members>Account.UpsellOpportunity__c</members>
-        <members>Case.EngineeringReqNumber__c</members>
-        <members>Case.PotentialLiability__c</members>
-        <members>Case.Product__c</members>
-        <members>Case.SLAViolation__c</members>
-        <members>Contact.Languages__c</members>
-        <members>Contact.Level__c</members>
-        <members>Goal.OrigGoalId__c</members>
-        <members>Lead.CurrentGenerators__c</members>
-        <members>Lead.NumberofLocations__c</members>
-        <members>Lead.Primary__c</members>
-        <members>Lead.ProductInterest__c</members>
-        <members>Lead.SICCode__c</members>
-        <members>Metric.OrigMetricId__c</members>
-        <members>Opportunity.CurrentGenerators__c</members>
-        <members>Opportunity.DeliveryInstallationStatus__c</members>
-        <members>Opportunity.MainCompetitors__c</members>
-        <members>Opportunity.OrderNumber__c</members>
-        <members>Opportunity.TrackingNumber__c</members>
+        <members>*</members>
         <name>CustomField</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomHelpMenuSection</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomLabel</name>
     </types>
     <types>
         <members>*</members>
@@ -81,55 +149,7 @@
         <name>CustomMetadata</name>
     </types>
     <types>
-        <members>Account</members>
-        <members>AccountCleanInfo</members>
-        <members>AccountContactRole</members>
-        <members>Activity</members>
-        <members>Asset</members>
-        <members>AssetRelationship</members>
-        <members>AssistantProgress</members>
-        <members>Campaign</members>
-        <members>CampaignMember</members>
-        <members>Case</members>
-        <members>CaseContactRole</members>
-        <members>Contact</members>
-        <members>ContactCleanInfo</members>
-        <members>ContentVersion</members>
-        <members>Contract</members>
-        <members>ContractContactRole</members>
-        <members>DandBCompany</members>
-        <members>Document</members>
-        <members>DuplicateRecordItem</members>
-        <members>DuplicateRecordSet</members>
-        <members>EmailMessage</members>
-        <members>Event</members>
-        <members>ExchangeUserMapping</members>
-        <members>FeedItem</members>
-        <members>ForecastingCategoryMapping</members>
-        <members>Idea</members>
-        <members>Lead</members>
-        <members>LeadCleanInfo</members>
-        <members>Macro</members>
-        <members>MacroAction</members>
-        <members>MacroInstruction</members>
-        <members>Opportunity</members>
-        <members>OpportunityCompetitor</members>
-        <members>OpportunityContactRole</members>
-        <members>OpportunityLineItem</members>
-        <members>Order</members>
-        <members>OrderItem</members>
-        <members>PartnerRole</members>
-        <members>Pricebook2</members>
-        <members>PricebookEntry</members>
-        <members>Product2</members>
-        <members>PushTopic</members>
-        <members>Site</members>
-        <members>SocialPersona</members>
-        <members>Solution</members>
-        <members>StreamingChannel</members>
-        <members>Task</members>
-        <members>User</members>
-        <members>UserProvisioningRequest</members>
+        <members>*</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -154,6 +174,94 @@
     </types>
     <types>
         <members>*</members>
+        <name>Dashboard</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DataCategoryGroup</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DelegateGroup</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Document</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DuplicateRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EclairGeoData</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EmailServicesFunction</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EmbeddedServiceBranding</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EmbeddedServiceConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EmbeddedServiceFlowConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EscalationRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EscalationRules</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EventDelivery</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EventSubscription</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ExternalDataSource</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ExternalServiceRegistration</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FieldSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FlowCategory</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FlowDefinition</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>GlobalValueSet</name>
     </types>
     <types>
@@ -162,7 +270,19 @@
     </types>
     <types>
         <members>*</members>
+        <name>Group</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>HomePageComponent</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>HomePageLayout</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Index</name>
     </types>
     <types>
         <members>*</members>
@@ -174,7 +294,63 @@
     </types>
     <types>
         <members>*</members>
+        <name>LeadConvertSettings</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Letterhead</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LightningBolt</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LightningExperienceTheme</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>MatchingRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>MatchingRules</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>NamedCredential</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>NetworkBranding</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PathAssistant</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PlatformCachePartition</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PlatformEventChannel</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PostTemplate</name>
     </types>
     <types>
         <members>*</members>
@@ -182,7 +358,27 @@
     </types>
     <types>
         <members>*</members>
+        <name>ProfilePasswordPolicy</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ProfileSessionSetting</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>QuickAction</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>RecommendationStrategy</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>RecordActionDeployment</name>
     </types>
     <types>
         <members>*</members>
@@ -194,7 +390,23 @@
     </types>
     <types>
         <members>*</members>
+        <name>Report</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ReportType</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>Role</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SamlSsoConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Scontrol</name>
     </types>
     <types>
         <members>*</members>
@@ -206,11 +418,19 @@
     </types>
     <types>
         <members>*</members>
+        <name>SharingReason</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>SharingRules</name>
     </types>
     <types>
         <members>*</members>
         <name>SharingSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SiteDotCom</name>
     </types>
     <types>
         <members>*</members>
@@ -225,15 +445,60 @@
         <name>StaticResource</name>
     </types>
     <types>
-        <members>Account.Billing</members>
-        <members>Campaign.ViewCampaignInfluenceReport</members>
-        <members>Case.UpsellCrosssellOpportunity</members>
-        <members>Opportunity.DeliveryStatus</members>
+        <members>*</members>
+        <name>SynonymDictionary</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>TopicsForObjects</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>TransactionSecurityPolicy</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ValidationRule</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>WebLink</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Workflow</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WorkflowAlert</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WorkflowFieldUpdate</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WorkflowKnowledgePublish</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WorkflowOutboundMessage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WorkflowRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WorkflowSend</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WorkflowTask</name>
     </types>
     <types>
         <members>*</members>
         <name>Settings</name>
     </types>
-    <version>40.0</version>
+    <version>45.0</version>
 </Package>
